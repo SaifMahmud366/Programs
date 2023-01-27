@@ -1,15 +1,15 @@
-array = []
-n = int(input("Enter N = "))
+nums=[]
+n=int(input("Enter N = "))
 
-for i in range(5):
-    element = int(input())
-    array.append(element)
+print("Enter Values = ")
+for i in range(n):
+    ele=int(input())
+    nums.append(ele)
 
-x = int(input("Enter A search element = "))
-
-i = 0
-while i<5:
-    if (array[i] == x):
+x = int(input("Enter Value = "))
+for i in range(n):
+    if (x==nums[i]):
         print("Found at position No. ",i+1)
         break
-    i+=1
+else:
+    print("Not Found")
